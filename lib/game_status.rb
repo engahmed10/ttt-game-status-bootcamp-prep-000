@@ -45,10 +45,8 @@ end
 end
 
 def winner(board)
-puts board[won?(board)[2]]
  if  won?(board)
-   puts board[won?(board)]
-   return  board[won?(board)]
+   return  board[won?(board)[2]]
  else
    return nil
 end
