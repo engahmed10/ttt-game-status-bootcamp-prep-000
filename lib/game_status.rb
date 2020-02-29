@@ -45,11 +45,11 @@ end
 end
 
 def winner(board)
-  won?(board)
-  puts won?(board)
- if  board.all?{ |a| board[a]== "X"}
+
+ if  board[won?(board)] == "X"
+
    return "X"
- elsif board.all?{ |a| board[a]== "O"}
+ else
    return "O"
 end
 end
