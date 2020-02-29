@@ -45,9 +45,9 @@ end
 end
 
 def winner(board)
- if won?(board)  == "X"
-   "X"
-elsif won?(board) == "O"
-   "O"
+ if won?(board[i])  == "X"
+   return board[i]
+ elsif won?(board[i]) == "O"
+   return board[i]
 end
 end
