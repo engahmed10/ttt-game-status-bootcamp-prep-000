@@ -48,8 +48,8 @@ def winner(board)
   won?(board)
   puts won?(board)
  if  board.all?{ |a| board[a]== "X"}
-   return board[a]
+   return "X"
  elsif board.all?{ |a| board[a]== "O"}
-   return board[a]
+   return "O"
 end
 end
