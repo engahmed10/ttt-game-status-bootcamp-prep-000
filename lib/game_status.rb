@@ -45,9 +45,9 @@ end
 end
 
 def winner(board)
- if won?(board[i]).all?{ |n| n== "X"}
-   return board
- elsif won?(board[i]).all? == "O"
-   return board[i]
+ if won?(board).all?{ |n| n== "X"}
+   return n
+ elsif won?(board).all?{ |n| n== "O"}
+   return n
 end
 end
